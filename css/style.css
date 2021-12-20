@@ -1,0 +1,274 @@
+/*
+ [ 1 ] font import
+ [ 2 ] variables
+ [ 3 ] generals
+ [ 4 ] section head
+ [ 5 ] section services
+ [ 6 ] ved section
+ [ 7 ] our team section
+ [ 8 ] you ask section
+ [ 9 ] costomer section
+ [ 10 ] modify animation carousel
+ */
+/* [ 1 ] font impors*/
+@font-face {
+  font-family: main;
+  src: url(../assets/fonts/mf.ttf);
+}
+
+@font-face {
+  font-family: sec;
+  src: url(../assets/fonts/sf.ttf);
+}
+
+/* [ 2 ] variables*/
+/* [ 3 ] generals*/
+.widder {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+
+.shrinker {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 78%;
+}
+
+.dimmer {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+@media (max-width: 1024px) {
+  .fixer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .headTitle {
+    font-size: 30px !important;
+  }
+}
+
+/* [ 4 ] section head*/
+.headTitle {
+  font-size: 60px;
+}
+
+form button .text-black.text-white:hover {
+  color: black;
+}
+
+/* [ 5 ] services section*/
+.bla span {
+  opacity: 0;
+  background-color: #1c203559;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.bla:hover span {
+  opacity: 1;
+}
+
+.cart:hover .plus {
+  color: white;
+}
+
+.cart .plus {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* [ 6 ] ved section* / */
+#vedMain {
+  height: 70vh;
+}
+
+#ved {
+  background-image: url("../assets/images/carousel-1.jpg");
+  background-repeat: no-;
+  background-size: cover;
+  background-position: center middle;
+  height: 100vh;
+  -webkit-filter: brightness(20%);
+          filter: brightness(20%);
+  background-position: fixed;
+}
+
+#tube {
+  position: relative;
+  z-index: 10;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+}
+
+#tube::after {
+  content: "";
+  position: absolute;
+  top: auto;
+  left: auto;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-animation-name: circle;
+          animation-name: circle;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  cursor: pointer;
+  z-index: -10;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    width: 100%;
+    height: 100%;
+    background-color: #ffae00;
+  }
+  100% {
+    width: 130%;
+    height: 130%;
+    background-color: #ffa60000;
+  }
+}
+
+@keyframes circle {
+  0% {
+    width: 100%;
+    height: 100%;
+    background-color: #ffae00;
+  }
+  100% {
+    width: 130%;
+    height: 130%;
+    background-color: #ffa60000;
+  }
+}
+
+/* [ 7 ] our team section */
+.cart:hover .dus, .cart:hover .sky, .cart:hover .bet, .cart:hover .gra {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.cart:hover .fixer3 {
+  color: black !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.cart:hover .fixer4 {
+  background-color: #ffc400 !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.cart .sky {
+  opacity: 0;
+  background-color: #0084ff;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.cart .bet {
+  opacity: 0;
+  background-color: #7544a3;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.cart .dus {
+  opacity: 0;
+  background-color: #29608d;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.cart .gra {
+  opacity: 0;
+  background-color: #46569b;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.social {
+  overflow: hidden;
+}
+
+.social .med {
+  width: 50px;
+  height: 50px;
+}
+
+/* [ 8 ] you may ask section */
+.accordion-button::after {
+  background-image: url("../assets/images/plus.png") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../assets/images/minus.png") !important;
+}
+
+@media (max-width: 767.98px) {
+  #fixer5 {
+    border: none !important;
+  }
+  .fixer6 {
+    font-size: 12px !important;
+  }
+}
+
+/* [ 9 ] costomer section */
+.facs {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px -50px;
+}
+
+.sender {
+  z-index: -10;
+}
+
+/* [ 10 ] caresoule animation and modifier*/
+.trans-pos {
+  -webkit-transform: translateX(-30%);
+          transform: translateX(-30%);
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  opacity: 0;
+}
+
+.trans-neg {
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  opacity: 0;
+}
+
+.fa {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
